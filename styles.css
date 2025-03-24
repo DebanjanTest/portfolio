@@ -1,12 +1,11 @@
 body {
-    margin: 0; /* Remove default margin */
+    margin: 100; /* Remove default margin */
     font-family: 'Arial', sans-serif; /* Set font family */
     display: flex; /* Use flexbox for layout */
     height: 100vh; /* Full viewport height */
     overflow: hidden; /* Hide overflow content */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background-image.jpg') no-repeat right center; /* Background image on the right with gradient overlay */
+    background: linear-gradient(to right, rgba(96, 3, 189, 0.5),rgba(195, 255, 231, 0.814), rgba(61, 41, 216, 0.732)), url('background-image.jpg') no-repeat right center; /* Background image on the right with gradient overlay */
     background-size: cover; /* Cover the entire body with the background image */
-    transition: background 0.5s ease; /* Smooth transition for background changes */
 }
 
 .background {
@@ -57,6 +56,6 @@ body {
 
 .text-container p {
     font-size: 20px; /* Font size for paragraph text */
-    font-family: 'Arial', sans-serif; /* Different font for the rest of the text */
+    font-family: 'Matrix Dots Demo'; /* Different font for the rest of the text */
     text-align: center; /* Center text alignment */
 }
