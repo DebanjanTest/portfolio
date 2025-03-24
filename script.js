@@ -13,7 +13,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";  
     slides[slideIndex - 1].style.opacity = 1; // Fade in the current slide
     setTimeout(() => {
-        slides[slideIndex - 1].style.opacity = 0; // Fade out after a delay
-    }, 2500); // Wait for 2.5 seconds before fading out
+        slides[slideIndex - 1].style.opacity = 500; // Fade out after a delay
+    }, 50); // Wait for 2.5 seconds before fading out
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
