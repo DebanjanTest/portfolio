@@ -1,0 +1,61 @@
+body {
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Set font family */
+    display: flex; /* Use flexbox for layout */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow content */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gradient background */
+}
+
+.background {
+    flex: 1; /* Allow background to take available space */
+    position: relative; /* Position relative for absolute children */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.slideshow-container {
+    position: absolute; /* Position absolutely within the parent */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.mySlides {
+    display: none; /* Hide slides by default */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.mySlides img {
+    width: 100%; /* Full width of the slide */
+    height: 100%; /* Full height of the slide */
+    object-fit: cover; /* Cover the entire slide area */
+    transition: opacity 1s ease; /* Smooth transition for image opacity */
+    opacity: 0; /* Start with opacity 0 */
+}
+
+.text-container {
+    flex: 1; /* Allow text container to take available space */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    color: white; /* Text color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 20px; /* Padding around the text */
+    transition: background 0.5s ease; /* Smooth transition for background changes */
+}
+
+.coming-soon {
+    font-size: 48px; /* Font size for "Coming Soon" text */
+    font-family: 'Courier New', Courier, monospace; /* Different font for "Coming Soon" */
+    margin: 0; /* Remove default margin */
+}
+
+.text-container p {
+    font-size: 20px; /* Font size for paragraph text */
+    font-family: 'Arial', sans-serif; /* Different font for the rest of the text */
+    text-align: center; /* Center text alignment */
+}
